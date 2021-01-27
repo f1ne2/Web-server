@@ -1,5 +1,6 @@
 import unittest
-from app.database import *
+from repository.database import *
+from app.Person import *
 
 
 class TestDatabase(unittest.TestCase):
