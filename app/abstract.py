@@ -1,4 +1,4 @@
-from Person import Person
+from app.Person import Person
 from typing import List
 from abc import ABCMeta, abstractmethod
 
