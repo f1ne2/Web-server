@@ -1,5 +1,5 @@
-from app.interface import Connection
-from API.contactAPI import Methods
+from app.api.interface import Connection
+from app.api.contact_api import Methods
 import socket
 
 
@@ -22,7 +22,7 @@ class Request:
 
 while True:
     sock = socket.socket()
-    sock.bind(('127.0.0.1', 9090))
+    sock.bind(('', 9090))
     sock.listen(1)
     conn, addr = sock.accept()
     print('connected:', addr)
